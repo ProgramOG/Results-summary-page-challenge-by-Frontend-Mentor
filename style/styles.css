@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;700;800&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* body container */
+
+body {
+    font-family: 'Hanken Grotesk', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+/* main container */
+
+.main_container {
+    display: grid;
+    max-width: 700px;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: #FFFFFF;
+    border-bottom-left-radius: 30px;
+    border-top-left-radius: 30px;
+    place-content: center;
+    place-items: center;
+    box-shadow: 70px 70px 500px 3px #d5def2;
+
+}
+
+/* left box container  */
+
+.result-container {
+    background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    position: relative;
+    border-radius: 30px;
+}
+
+/* left box container first Heading  */
+
+.ur_rslt {
+    text-align: center;
+    display: flex;
+    padding-top: 40px;
+    align-items: center;
+    justify-content: center;
+}
+
+.ur_rslt h1 {
+    font-size: 1.6rem;
+    color: #C6BFFF;
+}
+
+/* left box container circle  */
+
+.score_txt {
+    align-items: center;
+    justify-content: center;
+    margin: 20px 80px -20px 80px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 50%;
+    max-width: 100%;
+    background-image: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+    width: 14vw;
+    height: 30vh;
+    line-height: 50px;
+
+}
+.score_txt h2{
+    font-size: 5rem;
+    color: white;
+    padding-top: 20px;
+}
+.score_txt p{
+    font-size: 1rem;
+    color: #C6BFFF;
+    font-weight: 600;
+}
+
+/* left box container bottom heading and text */
+
+.bottom_text {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 50px 50px;
+}
+.bottom_text h1{
+    color: white;
+    padding-bottom: 20px;
+}
+.bottom_text p{
+    color:#C6BFFF;
+    font-size: 1.2rem;
+}
+
+/* right box container */
+
+.summary-container {
+    background-color: #FFFFFF;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    position: relative; 
+}
+
+/* right box container heading */
+
+.summary_h {
+    display: flex;
+    text-align: left;
+}
+.summary_h h1{
+    font-size: 1.6rem;
+    padding: 50px 0px 20px 40px;
+}
+
+/* right box container 4 list items */
+
+.summary_list {
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    grid-row-gap: 15px;
+    padding: 10px 40px;
+}
+
+/* right box container every single list */
+.inline-info {
+    display: grid;
+    grid-template-columns: 30px 125px 125px;
+    padding: 15px 20px;
+}
+
+/* first list */
+
+#reaction_cont {
+    background-color: #FFF6F5;
+    border-radius: 15px;
+}
+
+/* second list */
+
+#memory_cont {
+    background-color: #FFFBF2;
+    border-radius: 15px;
+}
+
+/* third list */
+
+#verbal_cont {
+    background-color: #F2FBFA;
+    border-radius: 15px;
+}
+
+/* fourth list */
+
+#visual_cont {
+    background-color: #F3F3FD;
+    border-radius: 15px;
+}
+
+/* 3rd item of every lists */
+
+.item_3 {
+    margin-right: 10px;
+    text-align: right;
+}
+.item_3 p{
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+/* first item of every lists */
+
+.item_1 {
+    display: flex;
+    align-items: center;
+}
+
+/* first list name  */
+
+.list_name1{
+    font-size: 1.2rem;
+    color:hsl(0, 100%, 67%) ;
+}
+
+/* second list name  */
+
+.list_name2{
+    font-size: 1.2rem;
+    color:hsl(39, 100%, 56%) ;
+}
+
+/* third list name  */
+
+.list_name3{
+    font-size: 1.2rem;
+    color:hsl(166, 100%, 37%) ;
+}
+
+/* fourth list name  */
+
+.list_name4{
+    font-size: 1.2rem;
+    color:hsl(234, 85%, 45%);
+}
+
+/* all total value to give different color */
+
+.total_vlu{
+    color: #A09CA8;
+}
+
+/* button container  */
+
+.btn_ctn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 0 30px 0;
+}
+
+/* button  */
+
+.btn {
+    padding: 15px 100px;
+    border-radius: 30px;
+    text-decoration: none;
+    border: 0;
+    background-color: hsl(241, 81%, 54%);
+    -moz-border-radius: 30px;
+    font-size: 1.2rem;
+    color: white;
+
+}
+
+/* button hover */
+
+.btn:hover {
+    background-color: #303B59;
+    cursor: pointer;
+}
+
+/* footer text */
+
+.attribution{
+    position: absolute;
+    bottom: 10px;
+}
